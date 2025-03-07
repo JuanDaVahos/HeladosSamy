@@ -1,0 +1,324 @@
+/* 
+    Estilo del header 
+    LOGO Y TITULO
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+    flex: 1;
+    padding: 10px;
+}
+
+body{
+    background: url(./fondo.webp) no-repeat center center/cover fixed;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+    background: rgb(45,27,27);
+    background: linear-gradient(90deg, rgba(45,27,27,1) 0%, rgba(78,42,0,1) 100%);
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin: 0px 10px;
+    border-radius: 20px;
+    box-shadow: inset #ffffff 0px 0px 20px;
+    padding: 10px;
+}
+
+.logo h1{
+    color: #ffffff;
+    text-shadow: #ffffff 0px 0px 20px;
+}
+
+/*
+    Estilo de la informacion
+    Sobre SAMY
+*/
+
+.info article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    width: 300px;
+    background: #ffffffd2;
+    border-radius: 20px;
+    box-shadow: #000000 0px 0px 10px;
+}
+
+.info a{
+    color: #f700ff;
+    text-decoration: none;
+    background-color: #ffffff;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: #000000 0px 0px 5px;
+}
+
+.info p{
+    color: #000000;
+}
+
+/* 
+    Estilo de la encuesta de trabajo
+    ENCUESTA DE TRABAJO
+*/
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #ffffffd2;
+    border-radius: 20px;
+    box-shadow: #000000 0px 0px 10px;
+}
+
+.contenido h2{
+    color: #000000;
+    text-align: center;
+    text-shadow: #000000 0px 0px 5px;
+    font-size: 2em;
+}
+
+.contenido p{
+    color: #000000;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.contenido form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.contenido form input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 300px;
+    font-size: 1.2em;
+}
+
+.contenido form textarea{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2em;
+    width: 600px;
+    min-height: 50px;
+    max-height: 300px;
+    resize: none;
+    field-sizing: content;
+}
+
+.contenido form button{
+    background: #000000;
+    color: #ffffff;
+    border: solid 3px #7b2f00;
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin: 20px 0px;
+    width: 150px;
+    cursor: pointer;
+}
+
+/*
+    Estilo del menu
+    MENU DE NAVEGACION
+*/
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    margin: 0px 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #f2f2f2;
+    text-shadow: #f2f2f2 0px 0px 15px;
+}
+
+/* 
+    Estilo de la seccion
+    SECCION DE PRODUCTOS
+*/
+
+
+section{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+section article{
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: #000000 0px 0px 10px;
+}
+
+section div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+section article img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+section article h2{
+    color: #000000;
+    text-align: center;
+    font-size: 2em;
+}
+
+section article h3{
+    color: #ff0000;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+section article button{
+    background: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+section article button:hover{
+    background: #ff3333;
+    box-shadow: #ff0000 0px 0px 20px;
+}
+
+/* 
+    Estilo del footer
+    PIE DE PAGINA
+*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    margin: 40px 0px 0px 0px;
+    background: rgb(45,27,27);
+    background: linear-gradient(90deg, rgba(45,27,27,1) 0%, rgba(78,42,0,1) 100%);
+}
+
+footer p{
+    color: #ffffff;
+    text-shadow: #f2f2f2 0px 0px 5px;
+    margin: 0px 0px 20px 0px;
+}
+
+footer a{
+    color: #000000;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: #000000 0px 0px 10px;
+}
+
+footer a:hover{
+    background-color: #f2f2f2;
+    box-shadow: #000000 0px 0px 20px;
+}
+
+footer strong{
+    margin: 0px 5px;
+}
+
+/* 
+    Estilo de moviles
+*/
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo{
+        margin-bottom: 15px;
+    }
+    nav a{
+        padding: 0;
+    }
+    section div{
+        width: 150px;
+        height: 150px;
+    }
+    section article img{
+        width: 60px;
+        height: 60px;
+    }
+
+    section article h2{
+        font-size: 1em;
+    }
+    section article h3{
+        font-size: 1em;
+    }
+    section article button{
+        border-radius: 10px;
+        padding: 5px 10px;
+    }
+    .contenido form input{
+        width: 200px;
+    }
+    .contenido form textarea{
+        width: 250px;
+    }
+}
